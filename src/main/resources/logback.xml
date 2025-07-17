@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd} | %d{HH:mm:ss.SSS} | %red(%-20.20thread) | %highlight(%-5level) | %green(%-25.25logger{25}) | %blue(%12(correlationId: %8mdc{correlationId})) | %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+</configuration>

@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+todo:
+  api:
+    client: https://jsonplaceholder.typicode.com
+
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            loggerLevel: HEADERS
+logging:
+  level:
+    com.fati.correlationidjava.client: DEBUG
